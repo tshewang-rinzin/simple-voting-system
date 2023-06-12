@@ -1,4 +1,3 @@
-import Link from 'next/link';
 import type { ReactNode } from 'react';
 
 import { AppConfig } from '@/utils/AppConfig';
@@ -20,7 +19,7 @@ const Main = (props: IMainProps) => (
           </h1>
           <h2 className="text-xl">{AppConfig.description}</h2>
         </div>
-        <nav>
+        {/* <nav>
           <ul className="flex flex-wrap text-xl">
             <li className="mr-6">
               <Link
@@ -55,14 +54,15 @@ const Main = (props: IMainProps) => (
               </Link>
             </li>
           </ul>
-        </nav>
+        </nav> */}
       </header>
 
       <main className="content py-5 text-xl">{props.children}</main>
 
       <footer className="border-t border-gray-300 py-8 text-center text-sm">
-        © Copyright {new Date().getFullYear()} {AppConfig.title}. Made with{' '}
-        <a href="https://creativedesignsguru.com">CreativeDesignsGuru</a>.
+        © Copyright {new Date().getFullYear()} {AppConfig.title}.
+        {/* Made with{' '} */}
+        {/* <a href="https://creativedesignsguru.com">CreativeDesignsGuru</a>. */}
         {/*
          * PLEASE READ THIS SECTION
          * I'm an indie maker with limited resources and funds, I'll really appreciate if you could have a link to my website.
