@@ -1,4 +1,4 @@
-// eslint-disable-next-line
+/* eslint-disable */
 import { useRouter } from 'next/router';
 import { useEffect, useState } from 'react';
 
