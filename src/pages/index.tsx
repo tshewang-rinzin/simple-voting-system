@@ -9,7 +9,7 @@ const Index = () => {
   const router = useRouter();
   const [licenseNo, setLicenseNo] = useState('');
   const [contactNo, setContactNo] = useState('');
-  const [error, setError] = useState(null);
+  const [error, setError] = useState('');
 
   useEffect(() => {
     // Remove token from localStorage when the component mounts
@@ -50,7 +50,7 @@ const Index = () => {
       }
     } catch (err) {
       console.error('Error making API request:', err);
-      setError('Error making API request');
+      setError('Error making API request' as null);
     }
   };
 

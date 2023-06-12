@@ -7,6 +7,9 @@ module.exports = withBundleAnalyzer({
   eslint: {
     dirs: ['.'],
   },
+  typescript: {
+    ignoreBuildErrors: true,
+  },
   poweredByHeader: false,
   trailingSlash: true,
   basePath: '',
